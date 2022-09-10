@@ -1,3 +1,6 @@
+// variable
+var varNumber = 5;
+
 // addition
 var eggPrice = 20;
 var onionPrice = 20;
