@@ -49,3 +49,15 @@ console.log(component3)
 
 //_____ >, <, ==, !=, <=, >=
 
+console.log("greaterthan", 5 > 6);
+console.log("greaterthan", 5 > 4);
+console.log("lessthan", 5 < 8);
+console.log("lessthan", 9 < 8);
+console.log("equal", 5 == 5);
+console.log("equal", 5 == 3);
+console.log("not equal", 5 != 5);
+console.log("not equal", 5 != 4);
+console.log("less and equal", 5<= 5);
+console.log("less and equal", 5<= 8);
+console.log("greater and equal", 8>= 5);
+console.log("greater or equal", 9>=9);
