@@ -61,3 +61,26 @@ console.log("less and equal", 5<= 5);
 console.log("less and equal", 5<= 8);
 console.log("greater and equal", 8>= 5);
 console.log("greater or equal", 9>=9);
+
+
+// if else Condition______________if else Condition______________if else Condition______________
+
+let eggPrice = 50;
+let myMoney = 60;
+if(eggPrice < myMoney){
+    console.log("mama ek hali dim den");
+}
+else{
+    console.log("mama 2 ta dim den");
+}
+
+// another conditon
+
+let orangePrice = 150;
+let applePrice = 120;
+if(applePrice < orangePrice){
+    console.log("Mama apple den.");
+}
+else{
+    console.log("Mama Orange den.");
+}
