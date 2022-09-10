@@ -86,3 +86,30 @@ console.log("addition of string");
 let firstName = "Jaber";
 let lastName = "Ahmed";
 console.log(firstName + " " + lastName);
+
+
+// number like string
+console.log("number like string");
+let Number1 = 10;
+let Number2 = "2";
+console.log(Number1 + Number2);
+
+let Number3 = "10";
+let Number4 = 2;
+console.log(Number3 + Number4);
+
+
+// "number text" to numeric
+// parseInt
+console.log("number text to numeric");
+let textNumber = "234";
+console.log(textNumber);
+let convertedNumber = parseInt(textNumber);
+console.log(convertedNumber);
+
+// parseFloat
+console.log("parseFloat");
+let decimalNumber = '5.02165';
+console.log(decimalNumber);
+let convertedDciToNum = parseFloat(decimalNumber);
+console.log(convertedDciToNum);
