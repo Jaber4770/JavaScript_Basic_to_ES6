@@ -89,6 +89,7 @@ else {
 
 
 // multiple_Condition____________multiple_Condition____________multiple_Condition____________multiple_Condition
+// ____________&&_______AND____________&&_______AND____________&&_______AND____________&&_______AND
 
 let isGraduated = true;
 let salary = 50000;
@@ -109,4 +110,17 @@ if ((bachelorPassed == true) && (perMonthIncome >= 30000) && (bike == true)) {
 }
 else {
     console.log("tmi prem korte parba na. jaw income koro giya.");
+}
+
+// or_Condition__||____or_Condition__||____or_Condition__||____or_Condition__||____or_Condition__||____
+
+let isJob = true;
+let goodSalary = true;
+let byCycle = 1;
+let motorBike = 0;
+if((isJob == true && motorBike === 1) || motorBike === 0){
+    console.log("You are handsome");
+}
+else{
+    console.log("work hard to achive these");
 }
