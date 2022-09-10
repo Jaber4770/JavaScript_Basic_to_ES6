@@ -145,3 +145,19 @@ else if(toastBiscuitPrice <= myBudget){
 else{
     console.log("Mama cha den, cha health er jonno bhalo.");
 }
+
+// new condition
+let math = true;
+let geomatry = true
+let straightLine = true;
+if( math === true){
+    if(geomatry == true){
+        console.log("You are good at math.");
+    }
+    else{
+        console.log("you are pocha.");
+    }
+}
+else{
+    console.log("Please, go the math coaching center to lear all the math");
+}
