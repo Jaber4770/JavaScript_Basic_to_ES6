@@ -78,3 +78,11 @@ let price6 = 6;
 console.log(price6);
 price6--;
 console.log(price6);
+
+
+// addition of string
+
+console.log("addition of string");
+let firstName = "Jaber";
+let lastName = "Ahmed";
+console.log(firstName + " " + lastName);
