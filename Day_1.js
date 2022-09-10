@@ -123,3 +123,18 @@ console.log(sumOfDeciNum);
 let fixedDeciNum = sumOfDeciNum.toFixed(2);
 console.log(fixedDeciNum);
 
+
+
+// "/" this oparator is called diviton oparator
+//  "%" this oparatior is called remainder / modulous oparator
+
+// modulous opeartor
+console.log("modulous opearator")
+let mangoes = 5;
+let person = 2;
+console.log("remainder", mangoes % person);
+
+
+
+
+
