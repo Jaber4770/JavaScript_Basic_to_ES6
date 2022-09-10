@@ -124,3 +124,24 @@ if((isJob == true && motorBike === 1) || motorBike === 0){
 else{
     console.log("work hard to achive these");
 }
+
+
+
+// Nested if else condition
+// if___else____if__else____________// if___else____if__else____________// if___else____if__else____________
+let myBudget = 30;
+let butterBonPrice = 20;
+let toastBiscuitPrice = 15;
+let danishPrice = 30;
+if(danishPrice <= myBudget){
+    console.log("Mama danish den");
+}
+else if(butterBonPrice === myBudget){
+    console.log("mama butterbon den");
+}
+else if(toastBiscuitPrice <= myBudget){
+    console.log("chubaiya chubaiya toast biscuit khamo");
+}
+else{
+    console.log("Mama cha den, cha health er jonno bhalo.");
+}
