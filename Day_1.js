@@ -136,5 +136,34 @@ console.log("remainder", mangoes % person);
 
 
 
+// todays task__!
 
+console.log("harrys math____________");
+let harrysMomGive = 1000;
+console.log("harrys mother give him", harrysMomGive);
+let harryOrangePrice = 400;
+let harryApplePrice = 300;
+let harryBrought = harryApplePrice + harryOrangePrice;
+console.log("he brought", harryBrought);
+let shopKeeperReturn = harrysMomGive - harryBrought;
+console.log("harry get return from shop keeper", shopKeeperReturn);
+
+
+// practice task_2
+console.log("practice task 2");
+let mathematics = 75.25;
+let biology = 65;
+let chemistry = 80;
+let physics = 35.45;
+let bangla = 99.50;
+
+let totalMarks = mathematics + biology + chemistry + physics + bangla;
+console.log(totalMarks);
+
+let avarageMarks = totalMarks / 5;
+console.log(avarageMarks);
+let fixedAvarageMarks = avarageMarks.toFixed(2);
+console.log(fixedAvarageMarks);
+let convertedToNum = parseFloat(fixedAvarageMarks);
+console.log(convertedToNum);
 
