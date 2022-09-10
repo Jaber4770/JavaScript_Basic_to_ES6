@@ -139,8 +139,9 @@ console.log("remainder", mangoes % person);
 
 
 
-// todays task__!
+// todays task______________________________________________________________________________________
 
+// practice task_1
 console.log("harrys math____________");
 let harrysMomGive = 1000;
 console.log("harrys mother give him", harrysMomGive);
