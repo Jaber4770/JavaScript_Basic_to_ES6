@@ -113,3 +113,13 @@ let decimalNumber = '5.02165';
 console.log(decimalNumber);
 let convertedDciToNum = parseFloat(decimalNumber);
 console.log(convertedDciToNum);
+
+// toFixed;
+console.log("toFixed");
+let deciNum1 = 0.1;
+let deciNum2 = 0.2;
+let sumOfDeciNum = deciNum1 + deciNum2;
+console.log(sumOfDeciNum);
+let fixedDeciNum = sumOfDeciNum.toFixed(2);
+console.log(fixedDeciNum);
+
