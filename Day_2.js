@@ -57,20 +57,20 @@ console.log("equal", 5 == 5);
 console.log("equal", 5 == 3);
 console.log("not equal", 5 != 5);
 console.log("not equal", 5 != 4);
-console.log("less and equal", 5<= 5);
-console.log("less and equal", 5<= 8);
-console.log("greater and equal", 8>= 5);
-console.log("greater or equal", 9>=9);
+console.log("less and equal", 5 <= 5);
+console.log("less and equal", 5 <= 8);
+console.log("greater and equal", 8 >= 5);
+console.log("greater or equal", 9 >= 9);
 
 
 // if else Condition______________if else Condition______________if else Condition______________
 
 let eggPrice = 50;
 let myMoney = 60;
-if(eggPrice < myMoney){
+if (eggPrice < myMoney) {
     console.log("mama ek hali dim den");
 }
-else{
+else {
     console.log("mama 2 ta dim den");
 }
 
@@ -78,9 +78,35 @@ else{
 
 let orangePrice = 150;
 let applePrice = 120;
-if(applePrice < orangePrice){
+if (applePrice < orangePrice) {
     console.log("Mama apple den.");
 }
-else{
+else {
     console.log("Mama Orange den.");
+}
+
+
+
+
+// multiple_Condition____________multiple_Condition____________multiple_Condition____________multiple_Condition
+
+let isGraduated = true;
+let salary = 50000;
+let car = 1;
+if ((isGraduated == true) && (salary >= 50000) && (car >= 1)) {
+    console.log("You can Marry now");
+}
+else {
+    console.log("You can not marry, Work hard");
+}
+
+// another condition
+let bachelorPassed = true;
+let perMonthIncome = 40000;
+let bike = true;
+if ((bachelorPassed == true) && (perMonthIncome >= 30000) && (bike == true)) {
+    console.log("tmi ekhn prem korte parba.");
+}
+else {
+    console.log("tmi prem korte parba na. jaw income koro giya.");
 }
