@@ -167,3 +167,16 @@ console.log(fixedAvarageMarks);
 let convertedToNum = parseFloat(fixedAvarageMarks);
 console.log(convertedToNum);
 
+// practice problem-3
+console.log("practice problem 3");
+let firstLine = 'I am going to be';
+let lastLine = "as awesome web developer";
+let fullLine = firstLine + ' ' + lastLine;
+console.log(fullLine);
+
+// practice problem 4
+console.log("practice problem 4");
+let sarahsMotherNum = 119;
+let dividedNum = 5;
+let remainder = sarahsMotherNum % dividedNum;
+console.log("sarah's answer would be", remainder);
