@@ -16,3 +16,21 @@ if(4>2){
 else{
     console.log("it's true");
 }
+
+// Loop_______________Loop___________Loop_______________Loop___________Loop_______________Loop___________Loop_______________Loop___________
+
+
+// while loop
+
+let roastGiven = 0;
+while(roastGiven<8){
+    console.log("mama roast den please.", roastGiven);
+    roastGiven++
+}
+
+// salad serving loop
+let saladGiving = 0;
+while(saladGiving < 5){
+    console.log("Mama salad dia jan.", saladGiving);
+    saladGiving++;
+}
