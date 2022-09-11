@@ -164,7 +164,7 @@ else {
 
 // practice problem_________practice problem_________practice problem_________practice problem_________
 
-// problem___1
+// problem___1_________________________________________________________________________________
 
 let fruits = ["apple", "banana", "orange"];
 console.log("index of banana", fruits.indexOf("banana"));
@@ -175,7 +175,7 @@ console.log(fruits);
 fruits.push("watermelon");
 console.log(fruits);
 
-// practice problem___2practice problem 2__practice problem 2
+// practice problem___2practice problem 2__practice problem 2________________________________________
 let myScore = 95;
 let tomScore = 66;
 let janesScore = 95;
@@ -203,7 +203,7 @@ else {
 
 
 
-// practice problem 3_______practice problem 3_______practice problem 3_______
+// practice problem 3_______practice problem 3_______practice problem 3___________________________________
 
 let firstSide = 9;
 let secondSide = 8;
@@ -215,7 +215,7 @@ else{
     console.log("dhoro mia, ki tribhoj ansen! Vagen");
 }
 
-// ___practice problem ___4___practice problem ___4___practice problem ___4
+// ___practice problem ___4___practice problem ___4___practice problem ___4_________________________________
 let probNum1 = 13;
 let probNum2 = 79;
 let probNum3 = 45;

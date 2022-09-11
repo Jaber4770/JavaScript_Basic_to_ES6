@@ -153,7 +153,7 @@ let shopKeeperReturn = harrysMomGive - harryBrought;
 console.log("harry get return from shop keeper", shopKeeperReturn);
 
 
-// practice task_2
+// practice task_2________________________________________________________________
 console.log("practice task 2");
 let mathematics = 75.25;
 let biology = 65;
@@ -171,14 +171,14 @@ console.log(fixedAvarageMarks);
 let convertedToNum = parseFloat(fixedAvarageMarks);
 console.log(convertedToNum);
 
-// practice problem-3
+// practice problem-3_______________________________________________________
 console.log("practice problem 3");
 let firstLine = 'I am going to be';
 let lastLine = "as awesome web developer";
 let fullLine = firstLine + ' ' + lastLine;
 console.log(fullLine);
 
-// practice problem 4
+// practice problem 4______________________________________________________________
 console.log("practice problem 4");
 let sarahsMotherNum = 119;
 let dividedNum = 5;
