@@ -72,7 +72,7 @@ for(let roastGiven = 0; roastGiven <=5; roastGiven++){
 // we can use i, if we write e large variable name. we can write but we can write it simply. so we can ue "i";
 // for loop simple version:
 for(let i = 1; i <= 5; i++) {
-    console.log(i);
+    console.log("the value: ",i);
 }
 
 
