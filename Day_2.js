@@ -118,10 +118,10 @@ let isJob = true;
 let goodSalary = true;
 let byCycle = 1;
 let motorBike = 0;
-if((isJob == true && motorBike === 1) || motorBike === 0){
+if ((isJob == true && motorBike === 1) || motorBike === 0) {
     console.log("You are handsome");
 }
-else{
+else {
     console.log("work hard to achive these");
 }
 
@@ -133,16 +133,16 @@ let myBudget = 30;
 let butterBonPrice = 20;
 let toastBiscuitPrice = 15;
 let danishPrice = 30;
-if(danishPrice <= myBudget){
+if (danishPrice <= myBudget) {
     console.log("Mama danish den");
 }
-else if(butterBonPrice === myBudget){
+else if (butterBonPrice === myBudget) {
     console.log("mama butterbon den");
 }
-else if(toastBiscuitPrice <= myBudget){
+else if (toastBiscuitPrice <= myBudget) {
     console.log("chubaiya chubaiya toast biscuit khamo");
 }
-else{
+else {
     console.log("Mama cha den, cha health er jonno bhalo.");
 }
 
@@ -150,14 +150,90 @@ else{
 let math = true;
 let geomatry = true
 let straightLine = true;
-if( math === true){
-    if(geomatry == true){
+if (math === true) {
+    if (geomatry == true) {
         console.log("You are good at math.");
     }
-    else{
+    else {
         console.log("you are pocha.");
     }
 }
-else{
+else {
     console.log("Please, go the math coaching center to lear all the math");
+}
+
+// practice problem_________practice problem_________practice problem_________practice problem_________
+
+// problem___1
+
+let fruits = ["apple", "banana", "orange"];
+console.log("index of banana", fruits.indexOf("banana"));
+fruits[1] = "Mango";
+console.log(fruits);
+fruits.pop();
+console.log(fruits);
+fruits.push("watermelon");
+console.log(fruits);
+
+// practice problem___2practice problem 2__practice problem 2
+let myScore = 95;
+let tomScore = 66;
+let janesScore = 95;
+let peterScore = 56;
+let johnsScore = 40;
+
+if (myScore >= 80) {
+    console.log("you got grade A");
+}
+else if (myScore >= 60) {
+    console.log("you got grade B");
+}
+else if (myScore >= 50) {
+    console.log("you got grade c");
+}
+else if (myScore >= 40) {
+    console.log("you got grade D");
+}
+else if (myScore <= 39) {
+    console.log("you got fail in exam");
+}
+else {
+    console.log("you did not attend in the exam");
+}
+
+
+
+// practice problem 3_______practice problem 3_______practice problem 3_______
+
+let firstSide = 9;
+let secondSide = 8;
+let thirdSide = 9;
+if ((firstSide === secondSide) || (secondSide === thirdSide) || (firstSide === thirdSide)){
+    console.log("your triangle is  isosceles triangle");
+}
+else{
+    console.log("dhoro mia, ki tribhoj ansen! Vagen");
+}
+
+// ___practice problem ___4___practice problem ___4___practice problem ___4
+let probNum1 = 13;
+let probNum2 = 79;
+let probNum3 = 45;
+if(probNum1 > probNum2){
+    console.log("first number is largest");
+}
+else if(probNum2 > probNum3){
+    console.log("second number is the largest");
+}
+else if( probNum3 > probNum1){
+    console.log("third number is the largest");
+}
+else if(probNum2 > probNum1){
+    console.log("second number is the largest2");
+}
+else if(probNum3 > probNum2){
+    console.log("third number is the largest2");
+}
+else{
+    console.log("your number is invalid");
 }
