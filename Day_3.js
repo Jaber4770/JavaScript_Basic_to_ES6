@@ -65,14 +65,26 @@ while (oddNumber <= 10) {
 // for_loop_____for_loop_____for_loop_____for_loop_____for_loop_____for_loop_____for_loop_____for_loop_____
 
 // for loop large version:
-for(let roastGiven = 0; roastGiven <=5; roastGiven++){
+for (let roastGiven = 0; roastGiven <= 5; roastGiven++) {
     console.log("roast diye jan.", roastGiven);
 }
 
 // we can use i, if we write e large variable name. we can write but we can write it simply. so we can ue "i";
 // for loop simple version:
-for(let i = 1; i <= 5; i++) {
-    console.log("the value: ",i);
+for (let i = 1; i <= 5; i++) {
+    console.log("the value: ", i);
 }
 
 
+/* 
+    alt + shift + a , for multi line comment.
+*/
+
+
+// showing data from an array:
+
+
+let numArry = [234, 343, 54, 545, 56, 56, 565, 67, 7, 67, 6,];
+for(let i = 0; i<=numArry.length; i++){
+    console.log("array item",numArry[i]);
+}
