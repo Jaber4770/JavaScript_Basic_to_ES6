@@ -106,3 +106,14 @@ for (let i = 0; i < breakArry.length; i++) {
     }
     console.log(breakArry[i]);
 }
+
+
+// continue_______continue_______continue_______continue_______continue_______continue_______continue_______continue
+
+let continueNumArry = [454, 56, 56, 4, 34, 54, 654, 654, 654, 54, 35, 4];
+for (let i = 0; i < continueNumArry.length; i++) {
+    if (continueNumArry[i] < 50) {
+        continue;
+    }
+    console.log("your filtered number is: ", continueNumArry[i]);
+}
