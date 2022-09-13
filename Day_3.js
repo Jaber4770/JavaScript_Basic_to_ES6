@@ -85,6 +85,13 @@ for (let i = 1; i <= 5; i++) {
 
 
 let numArry = [234, 343, 54, 545, 56, 56, 565, 67, 7, 67, 6,];
-for(let i = 0; i<=numArry.length; i++){
-    console.log("array item",numArry[i]);
+for (let i = 0; i <= numArry.length; i++) {
+    console.log("array item", numArry[i]);
+}
+
+// another array:
+
+let items = ["jog", "mog", "pani", "tel", "bel"];
+for(let i = 0; i <items.length; i++){
+    console.log(items[i]);
 }
