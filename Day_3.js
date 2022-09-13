@@ -92,6 +92,17 @@ for (let i = 0; i <= numArry.length; i++) {
 // another array:
 
 let items = ["jog", "mog", "pani", "tel", "bel"];
-for(let i = 0; i <items.length; i++){
+for (let i = 0; i < items.length; i++) {
     console.log(items[i]);
+}
+
+// _____Break_____________Break_____________Break_____________Break_____________Break_____________Break_____________Break________
+
+
+let breakArry = [234, 55, 46, 768, 456, 345, 546, 435, 345, 34, 54, 565, 454, 35];
+for (let i = 0; i < breakArry.length; i++) {
+    if (breakArry[i] > 300) {
+        break;
+    }
+    console.log(breakArry[i]);
 }
