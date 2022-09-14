@@ -46,3 +46,20 @@ console.log(incrementalNum);
 let decrementalNum = 5;
 decrementalNum--;
 console.log(decrementalNum);
+
+
+// ____parseInt________parseFloat__________toFixed_________________:
+
+let textValue = "45";
+console.log("textValue is: ", textValue);
+let numericValue = 45.4545;
+console.log("numeric value is: ", numericValue);
+
+console.log("text value to integer: ", parseInt(textValue));
+console.log("numeric number is: ", parseInt(numericValue));
+
+
+let parseFlotNumbe = "35.432";
+console.log(parseFlotNumbe);
+console.log("parseFloat Number is: ", parseFloat(parseFlotNumbe));
+
