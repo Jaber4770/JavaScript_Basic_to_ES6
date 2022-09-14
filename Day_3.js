@@ -125,7 +125,7 @@ for (let i = 0; i < continueNumArry.length; i++) {
 
 // incremental:
 let varNumber = 1;
-while(varNumber <= 10){
+while (varNumber <= 10) {
     console.log(varNumber);
     varNumber++;
 }
@@ -135,15 +135,24 @@ console.log("end of incremental and start decremental: ");
 
 // decremental:
 let decVarNumber = 10;
-while(decVarNumber >= 1){
+while (decVarNumber >= 1) {
     console.log(decVarNumber);
     decVarNumber--;
 }
 
 // by for loop: 
-for(let i = 10; i >= 1 ; i--){
+for (let i = 10; i >= 1; i--) {
     console.log("number is reducing: ", i);
 }
 
 
+// quize_______quize____________________quize____________________quize_______________________:
+
+var marks = [13, 15, 14, 20, 18];
+for (var i = 0; i < marks.length; i++) {
+    if (marks[i] >= 15) {
+        continue;
+    }
+    console.log(marks[i]);
+};
 
