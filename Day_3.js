@@ -117,3 +117,33 @@ for (let i = 0; i < continueNumArry.length; i++) {
     }
     console.log("your filtered number is: ", continueNumArry[i]);
 }
+
+
+
+// ________while loop in a reverse way_______Decremental_________while loop in a reverse way______Decremental__________while loop in a reverse way________x
+
+
+// incremental:
+let varNumber = 1;
+while(varNumber <= 10){
+    console.log(varNumber);
+    varNumber++;
+}
+
+
+console.log("end of incremental and start decremental: ");
+
+// decremental:
+let decVarNumber = 10;
+while(decVarNumber >= 1){
+    console.log(decVarNumber);
+    decVarNumber--;
+}
+
+// by for loop: 
+for(let i = 10; i >= 1 ; i--){
+    console.log("number is reducing: ", i);
+}
+
+
+
