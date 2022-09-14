@@ -39,3 +39,10 @@ console.log(price4);
 
 // incremental and decremental_________________________--_______++__________:
 
+let incrementalNum = 4;
+incrementalNum++;
+console.log(incrementalNum);
+
+let decrementalNum = 5;
+decrementalNum--;
+console.log(decrementalNum);
