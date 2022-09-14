@@ -71,8 +71,8 @@ console.log('the element number of component arry: ', component.length);
 component[4] = 'pc';
 console.log(component);
 
-console.log("in index of 4, the element is: ",component[4]);
-console.log("position of speaker: ",component.indexOf("speaker"));
+console.log("in index of 4, the element is: ", component[4]);
+console.log("position of speaker: ", component.indexOf("speaker"));
 console.log(component);
 
 // add and remove the last element of an array:
@@ -87,3 +87,80 @@ component.shift();
 console.log(component);
 component.unshift('router');
 console.log(component);
+
+
+// comparision:_____________>, <, ==, !=, <=, >=, ===, !==, &&, ।।____________
+
+/**
+
+
+*) > = greater than
+ *) < = lessthan
+ *) == = equal
+ *) != = not equal
+ *) <= = less equal
+ *) >= = greater equal
+ *) === = equal two value with type
+ *) !== = not equal
+ *) && = two condition have to be true
+ *) || = between two condition, if one condition is true it will work 
+
+
+ */
+
+
+
+/*  ২৪. তোমার কাছে: ৮০০০০ টাকার বেশি হলে তুমি mac কিনবে, ৬০ টাকার বেশি হলে gaming ল্যাপটপ কিনবে, ৪০ হাজার টাকার বেশি হলে lenovo yoga কম্পিউটার কিনবে , ২০ হাজার টাকার বেশি হলে পুরান ল্যাপটপ কিনবে। না হয় তুমি মোবাইল দিয়ে কাজ চালাবে। 
+*/
+
+
+let myMoney = 50000;
+let macBookPrice = 80000;
+let gamingLaptopPrice = 60000;
+let lenevoYogaPrice = 40000;
+let oldLaptop = 20000;
+if (macBookPrice < myMoney) {
+    console.log("give me a mac book pro");
+}
+else if (gamingLaptopPrice < myMoney) {
+    console.log("give me a gaming laptop");
+}
+else if (lenevoYogaPrice < myMoney) {
+    console.log('give me a lenevo yoga price');
+}
+else if (oldLaptop < myMoney) {
+    console.log("give me a old model laptop");
+}
+else {
+    console.log("you can work with your mobile phone");
+}
+
+// ২৫. আসকে আমার মন ভালো নেই -- এই কথা ৩৯ বার আউটপুট হিসেবে দেখাও। 
+
+for (let i = 1; i <= 39; i++) {
+    console.log(i, ")", "ajk amr mon bhalo nei.");
+}
+
+// ২৯. একটা কোড লিখে ৫৮ থেকে ৯৮ পর্যন্ত যত সংখ্যা আছে সেগুলাকে দেখাও 
+
+for (let i = 58; i <= 98; i++) {
+    console.log("The numbe is: ", i);
+}
+
+
+// ৩০.একটা কোড লিখে ৪১২ থেকে ৪৫৬ পর্যন্ত যত জোর সংখ্যা আছে সেগুলাকে দেখাও  
+
+for (let i = 412; i <= 456; i++) {
+    console.log("the even number is: ", i);
+    i += 1;
+}
+
+// ৩১. একটা কোড লিখে ৫৮১ থেকে ৬২৩ পর্যন্ত যত বিজোড় সংখ্যা আছে সেগুলাকে দেখাও
+
+for (let i = 581; i <= 623; i++) {
+    console.log("Odd number is: ", i);
+    i += 1;
+}
+
+// ৩৩ তুমি এতদিন যা যা জিনিস শিখছো সেগুলার নাম দিয়ে একটা array বানাও। তারপর একটা for লুপ দিয়ে সেই array এর সব উপাদান কে আউটপুট হিসেবে দেখাও। 
+
