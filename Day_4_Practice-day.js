@@ -63,3 +63,27 @@ let parseFlotNumbe = "35.432";
 console.log(parseFlotNumbe);
 console.log("parseFloat Number is: ", parseFloat(parseFlotNumbe));
 
+// ________array___________________array___________________array___________________array___________________array___
+
+let component = ['router', 'mouse', 'keyboard', 'monitor', 'cpu', 'multiplug', 'speaker'];
+
+console.log('the element number of component arry: ', component.length);
+component[4] = 'pc';
+console.log(component);
+
+console.log("in index of 4, the element is: ",component[4]);
+console.log("position of speaker: ",component.indexOf("speaker"));
+console.log(component);
+
+// add and remove the last element of an array:
+component.push('wifi dongol');
+console.log(component);
+component.pop();
+console.log(component);
+
+
+// remove and add first element of an array:
+component.shift();
+console.log(component);
+component.unshift('router');
+console.log(component);
