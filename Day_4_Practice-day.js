@@ -164,3 +164,36 @@ for (let i = 581; i <= 623; i++) {
 
 // ৩৩ তুমি এতদিন যা যা জিনিস শিখছো সেগুলার নাম দিয়ে একটা array বানাও। তারপর একটা for লুপ দিয়ে সেই array এর সব উপাদান কে আউটপুট হিসেবে দেখাও। 
 
+let learnThing = ["variable", "condition", "loop", "array", "conversion", "oparation", "etc"];
+for (let i = 0; i < learnThing.length; i++) {
+    console.log(learnThing[i]);
+}
+
+// ৩৪. তুমি এতদিন পর্যন্ত যে যে মডেলের মোবাইল ফোন ইউজ করেছো সেগুলার নাম দিয়ে একটা array বানাও। তারপর একটা while লুপ দিয়ে সেই array এর উপাদান গুলা একটা একটা করে আউটপুট হিসেবে দেখাও 
+
+let phoneArray = ["wintouch-tab", "samsung-tab", "samsung-siii", "samsung-M31", "walton-button"];
+let i = 0;
+while (i < phoneArray.length) {
+    console.log("my used phone is:", phoneArray[i]);
+    i++
+}
+
+// ৩৫. একটা ফর লুপ চালাও। ৩০ থেকে ৮৬ পর্যন্ত। আর এই লুপ ৪৪ এ গেলে ব্রেক করবে। সেই জিনিস কোড করে দেখাও 
+
+for (let i = 30; i < 86; i++) {
+    if (i == 44) {
+        break;
+    }
+    console.log("your number is: ", i);
+}
+
+
+// ৩৬. তোমার যত বই আছে সেগুলার দাম নিয়ে একটা array লিখে ফেলো। যে বই গুলোর দাম ২০০ টাকার উপরে সেগুলাকে স্কিপ করবে। অর্থাৎ সেগুলাকে আউটপুট হিসেবে দেখাবে না। বাকিদের কে আউটপুট হিসেবে দেখাবে। দেখো করতে পারো কিনা। 
+
+let bookPrice = [23, 43, 41, 40, 5, 56, 60, 34, 88, 34, 456, 74, 57, 567, 65, 46, 435, 345]
+for(let i = 0; i<bookPrice.length; i++){
+    if(bookPrice[i] >= 200){
+        continue;
+    }
+    console.log(bookPrice[i]);
+}
