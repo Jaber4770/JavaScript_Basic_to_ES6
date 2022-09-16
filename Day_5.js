@@ -116,3 +116,38 @@ phone.color = "blue";
 console.log("new object: ", phone);
 
 
+let phoneCompany = {
+    company1: "Samsung",
+    company2: "Iphone",
+    company3: "Xiomi",
+    company3: "Oppo",
+    company4: "Lenevo",
+    company5: "One Plus",
+    company6: "Lava",
+    company7: "lg"
+}
+console.log(phoneCompany);
+
+// how to access the value of an key: 
+
+let keyValue = phoneCompany.company1;
+console.log(keyValue);
+
+// another way to access the keys value: 
+
+let keysValue2 = phoneCompany['company2'];
+console.log(keysValue2);
+
+// getting access all the property name of the object: 
+let getThePropertyOfAnObject = Object.keys(phoneCompany);
+console.log(getThePropertyOfAnObject)
+
+// getting access all the value name of the object: 
+let getTheValueOFAnObject2 = Object.values(phoneCompany);
+console.log(getTheValueOFAnObject2);
+
+
+// an another way to get the keys value of an array: 
+let propertyName = "company5";
+let propertyValue = phoneCompany[propertyName];
+console.log(propertyName, propertyValue);
