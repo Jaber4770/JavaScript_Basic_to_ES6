@@ -151,3 +151,47 @@ console.log(getTheValueOFAnObject2);
 let propertyName = "company5";
 let propertyValue = phoneCompany[propertyName];
 console.log(propertyName, propertyValue);
+
+
+
+let pcConfig = {
+    processor: "i9",
+    motherBoard: " 610",
+    ram: "16gb",
+    storage: "1TB"
+}
+
+// all the way to get access object: 
+console.log(pcConfig);
+console.log(pcConfig.ram);
+console.log(pcConfig['ram']);
+let objectProperty = "processor";
+console.log("using variable way: ",pcConfig[objectProperty]);
+let pcStorage = "storage"
+console.log('this is second: ', pcConfig[pcStorage]);
+
+
+// getting all the keys name of the object: 
+console.log(Object.keys(pcConfig));
+
+// getting all the value name fo the object: 
+console.log(Object.values(pcConfig));
+
+
+// we can add object property and value like we get access the value and property:
+
+let element = {
+    mouse: 4,
+    book: 5,
+    pen: 2,
+    keyboard: 4
+}
+
+console.log(element);
+element.mouse = 30;
+console.log(element);
+element['book'] = 40;
+console.log(element);
+let elementName = 'pen';
+element[elementName] = 50;
+console.log(element);
