@@ -195,3 +195,29 @@ console.log(element);
 let elementName = 'pen';
 element[elementName] = 50;
 console.log(element);
+
+
+
+// throughing loop in a object_____________________________:
+console.log("// throughing loop in a object_____________________________:")
+
+let shoppingCart = {
+    pant: 5,
+    shirt: 3,
+    tShirt: 9,
+    jota: 3,
+    shortPant: 9    
+}
+
+console.log(shoppingCart);
+
+let getPropertyName = Object.keys(shoppingCart);
+let getValuesName = Object.values(shoppingCart);
+
+console.log(getPropertyName, "=", getValuesName);
+
+for(let i = 0; i< getPropertyName.length; i++){
+    let keysName = getPropertyName[i];
+    let valuesName = shoppingCart[keysName];
+    console.log(keysName, valuesName);
+}
