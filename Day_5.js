@@ -198,10 +198,12 @@ console.log(element);
 
 
 
-// throughing loop in a object_____________________________:
+// throughing loop in a object______THIS IS A HARD WAY _______________________:
 console.log("// throughing loop in a object_____________________________:")
+// we can declare more  variable with same name but it should be declare wit var. let and const are not maintain this rule;
 
-let shoppingCart = {
+
+var shoppingCart = {
     pant: 5,
     shirt: 3,
     tShirt: 9,
@@ -220,4 +222,51 @@ for(let i = 0; i< getPropertyName.length; i++){
     let keysName = getPropertyName[i];
     let valuesName = shoppingCart[keysName];
     console.log(keysName, valuesName);
+}
+
+
+// we can acces data from an object using for in loop. for in loop use to get access data from object.
+// easy way to get access data from an object by for in:
+console.log("// easy way to get access data from an object by for in:")
+
+var shoppingCart = {
+    pant: 5,
+    shirt: 3,
+    tShirt: 9,
+    jota: 3,
+    shortPant: 9    
+}
+
+for( let shoppingPropertyName in shoppingCart){
+    let shoppingValues = shoppingCart[shoppingPropertyName];
+    console.log(shoppingPropertyName, "=", shoppingValues);
+}
+
+// ^^^^ here we can get access keys and value from a object easily:
+
+
+// Object entries; 
+// we can convert  a object to array; 
+console.log(Object.entries(shoppingCart));
+
+
+// an fast alternative of if else is stwitch: 
+
+let color = 'red';
+
+switch (color){
+    case 'red':
+        console.log("your color is red");
+        break;
+    case 'white':
+        console.log("your color is white");
+        break;
+    case 'purple':
+        console.log("your color is purple");
+        break;
+    case 'green':
+        console.log("your color i s green");
+        break;
+    default:
+        console.log("you are a fan of black");
 }
