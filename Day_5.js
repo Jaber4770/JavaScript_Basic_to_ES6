@@ -304,3 +304,35 @@ console.log(getTheResult);
 
 // i didn't complate this problem. i am confused.
 
+
+
+// odd or even number testing function______________________________:
+
+/* 
+Way -1
+
+function odd_even(checkNumber){
+    let oddOrEven = checkNumber / 2;
+    return oddOrEven;
+}
+
+
+let getResult = odd_even(6);
+console.log("Your number odd or even: ",getResult);
+
+*/
+
+
+// Way -2
+
+function odd_even(checkNumber){
+    if((checkNumber % 2) == 0){
+        console.log('your number is even.');
+    }
+    else{
+        console.log('your  number odd.')
+    }
+}
+
+
+let getResult = odd_even(6);
