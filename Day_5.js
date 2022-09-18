@@ -325,14 +325,57 @@ console.log("Your number odd or even: ",getResult);
 
 // Way -2
 
-function odd_even(checkNumber){
-    if((checkNumber % 2) == 0){
+function odd_even(checkNumber) {
+    if ((checkNumber % 2) == 0) {
         console.log('your number is even.');
     }
-    else{
+    else {
         console.log('your  number odd.')
     }
 }
 
 
 let getResult = odd_even(6);
+
+
+
+// Road Cross signal________________________________________:
+
+// way-1________this is if else way________________:
+let signal = "yellow";
+
+if (signal == "red") {
+    console.log("Your color is Red");
+}
+else if (signal == "green") {
+    console.log("Your color is Green");
+}
+else if (signal == "yellow") {
+    console.log("Your color is Yellow");
+}
+else {
+    console.log("You have no color.")
+}
+
+// 
+let switchColor = "red";
+
+switch (switchColor){
+    case "green":
+        console.log("You should not cross the road");
+        break;
+    case "yellow":
+        console.log("Your should be stop");
+        break;
+    case "red":
+        console.log("You can cross the road now.");
+        break;
+    default:
+        console.log("you should not cross the road.");
+}
+
+
+
+
+
+
