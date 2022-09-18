@@ -59,7 +59,7 @@ sum(2, 3, 4, 5, 6);
 
 // function with return_____________________________________:
 
-function numberAddition(number1, number2){
+function numberAddition(number1, number2) {
     console.log("perameters are: ", number1, "and", number2);
     let sum = number1 + number2;
     return sum;
@@ -69,7 +69,7 @@ function numberAddition(number1, number2){
 let num1 = 10;
 let num2 = 10;
 let total = numberAddition(num1, num2);
-console.log("addition of the function: ",total);
+console.log("addition of the function: ", total);
 
 // object____________________________________________:
 
@@ -105,7 +105,7 @@ console.log(myPc);
 
 // another object______________________________________________:
 
-let phone= {
+let phone = {
     brand: "samsung",
     color: "black",
     ram: "6gb",
@@ -166,7 +166,7 @@ console.log(pcConfig);
 console.log(pcConfig.ram);
 console.log(pcConfig['ram']);
 let objectProperty = "processor";
-console.log("using variable way: ",pcConfig[objectProperty]);
+console.log("using variable way: ", pcConfig[objectProperty]);
 let pcStorage = "storage"
 console.log('this is second: ', pcConfig[pcStorage]);
 
@@ -208,7 +208,7 @@ var shoppingCart = {
     shirt: 3,
     tShirt: 9,
     jota: 3,
-    shortPant: 9    
+    shortPant: 9
 }
 
 console.log(shoppingCart);
@@ -218,7 +218,7 @@ let getValuesName = Object.values(shoppingCart);
 
 console.log(getPropertyName, "=", getValuesName);
 
-for(let i = 0; i< getPropertyName.length; i++){
+for (let i = 0; i < getPropertyName.length; i++) {
     let keysName = getPropertyName[i];
     let valuesName = shoppingCart[keysName];
     console.log(keysName, valuesName);
@@ -234,10 +234,10 @@ var shoppingCart = {
     shirt: 3,
     tShirt: 9,
     jota: 3,
-    shortPant: 9    
+    shortPant: 9
 }
 
-for( let shoppingPropertyName in shoppingCart){
+for (let shoppingPropertyName in shoppingCart) {
     let shoppingValues = shoppingCart[shoppingPropertyName];
     console.log(shoppingPropertyName, "=", shoppingValues);
 }
@@ -254,7 +254,7 @@ console.log(Object.entries(shoppingCart));
 
 let color = 'red';
 
-switch (color){
+switch (color) {
     case 'red':
         console.log("your color is red");
         break;
@@ -270,3 +270,37 @@ switch (color){
     default:
         console.log("you are a fan of black");
 }
+
+// pracice problem__________________:
+
+// foo bar function: 
+function foo() {
+    console.log("foo");
+    bar();
+}
+
+function bar() {
+    console.log("bar");
+}
+
+foo();
+
+
+// make avarage function__________________________________________:
+
+function make_avg(numb1, numb2, numb3) {
+    let sumOfTheNumb = numb1 + numb2 + numb3;
+    let avarage = sumOfTheNumb / 3;
+    return avarage;
+}
+
+let numb1 = 3;
+let numb2 = 4;
+let numb3 = 5;
+let getTheResult = make_avg(numb1, numb2, numb3);
+console.log(getTheResult);
+
+// make avarage calculation from an arra__________________________:
+
+// i didn't complate this problem. i am confused.
+
