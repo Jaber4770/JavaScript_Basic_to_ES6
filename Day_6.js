@@ -87,7 +87,7 @@ console.log(leapYearResult);
 
 function additionFromArray(array) {
     let initialAddition = 0;
-    for(let i = 0; i< array.length; i++){
+    for (let i = 0; i < array.length; i++) {
         let arrayValue = array[i];
         initialAddition += arrayValue;
     }
@@ -97,4 +97,33 @@ function additionFromArray(array) {
 
 let numbersArray = [23, 34, 54, 65, 76, 56, 54];
 let totalOFArray = additionFromArray(numbersArray);
-console.log("total of the array: ",totalOFArray);
+console.log("total of the array: ", totalOFArray);
+
+
+
+// filtering all the odd number from an array____________________:
+
+function oddNumberFiltering(Numbers) {
+    let filteredOdd = [];
+    for(let i = 0; i<Numbers.length; i++){
+        let index = i;
+        let element = Numbers[index];
+        if( element % 2 !== 0){
+            filteredOdd.push(element);
+        }
+    }
+    return filteredOdd;
+}
+
+let numbersArry = [23, 34, 45, 56, 67, 76, 86, 97, 65, 34];
+let getOddResult = oddNumberFiltering(numbersArry);
+console.log(getOddResult);
+let oddNumberAddition = additionFromArray(getOddResult);
+console.log("Filtered from the array of to Odd and the Odd sum is: ", oddNumberAddition);
+
+
+
+// addition fo numbers by factorial_________________________________________:
+
+
+
