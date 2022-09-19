@@ -78,3 +78,23 @@ function isLeapYear(year) {
 let checkingYear = 2020;
 let leapYearResult = isLeapYear(checkingYear);
 console.log(leapYearResult);
+
+
+
+
+// making additin of sum from an arra_________________________:
+
+
+function additionFromArray(array) {
+    let initialAddition = 0;
+    for(let i = 0; i< array.length; i++){
+        let arrayValue = array[i];
+        initialAddition += arrayValue;
+    }
+    return initialAddition;
+}
+
+
+let numbersArray = [23, 34, 54, 65, 76, 56, 54];
+let totalOFArray = additionFromArray(numbersArray);
+console.log("total of the array: ",totalOFArray);
