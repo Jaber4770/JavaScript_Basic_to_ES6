@@ -21,6 +21,7 @@ console.log(getFarenheightResult, "Degree Farenheit");
 
 
 // farenheit to celcius______________________________________:
+// ২. একইভাবে উল্টা হিসাব করবে। যাতে তোমাকে ফারেনহাইট হিসেবে তাপমাত্রা দিলে সেটাকে সেলসিয়াস এ কনভার্ট করে আউটপুট দিবে। 
 // formula is: 	(32°F − 32) × 5/9 = 0°C
 	
 
@@ -35,7 +36,40 @@ console.log(getCelciusResult);
 
 
 
+// ৩. কেউ ১০০ এর মধ্যে কত মার্ক্স্ পেয়েছে সেটা তোমাকে বলে দিবে। তুমি একটা ফাংশন দিয়ে বলে দিবে সে এ+ পাবে নাকি অন্য কোন গ্রেড পাবে। 
+
+function grade(marks){
+    if( marks <= 100 && marks >= 0){
+        if(marks >=80){
+            return (marks, "your grade is A+");
+        }
+        else if( marks >= 70){
+            return (marks, "your grade is A");
+        }
+        else if(marks>= 60){
+            return (marks, "your grade is A-");
+        }
+        else if(marks >= 50){
+            return (marks, "your grade is B");
+        }
+        else if(marks >= 40){
+            return (marks, "your grade is B-");
+        }
+        else if(marks >= 33){
+            return (marks, "your grade is C");
+        }
+        else{
+            return (marks, "your grade is F");
+        }
+    }
+    else{
+        console.log("your marks is invalid.");
+    }
+}
 
 
+let marks = 100;
+let getGradePoint = grade(marks);
+console.log(getGradePoint);
 
 
