@@ -105,10 +105,10 @@ console.log("total of the array: ", totalOFArray);
 
 function oddNumberFiltering(Numbers) {
     let filteredOdd = [];
-    for(let i = 0; i<Numbers.length; i++){
+    for (let i = 0; i < Numbers.length; i++) {
         let index = i;
         let element = Numbers[index];
-        if( element % 2 !== 0){
+        if (element % 2 !== 0) {
             filteredOdd.push(element);
         }
     }
@@ -124,6 +124,72 @@ console.log("Filtered from the array of to Odd and the Odd sum is: ", oddNumberA
 
 
 // addition fo numbers by factorial_________________________________________:
+
+
+function factorialAddition(factoNumber) {
+    let sum = 0;
+    for (let i = 0; i <= factoNumber; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+let sendingFactoNum = 9;
+let getFactoResult = factorialAddition(sendingFactoNum);
+console.log(getFactoResult);
+
+
+
+// get multiplication of numbers____________________________________:
+
+function multiplicationOfNumber(number) {
+    let iniMulti = 1;
+    for (let i = 1; i <= number; i++) {
+        iniMulti *= i;
+    }
+    return iniMulti;
+}
+
+
+let mulplicaNumber = 9;
+let getMultiplication = multiplicationOfNumber(mulplicaNumber);
+console.log(getMultiplication);
+
+
+// Reverse way factorial________________________________:
+
+function factorail(number) {
+    let multiOfNumb = 1;
+    for (let i = number; i >= 1; i--) {
+        multiOfNumb *= i;
+    }
+    return multiOfNumb;
+}
+
+
+let sndMultiNumb = 4;
+let getFactorial = factorail(sndMultiNumb);
+console.log("Factorial of ", sndMultiNumb, " is =", getFactorial);
+
+
+
+
+// Factorial with while loop______________________________:
+
+function factorialWhile(number) {
+    let foctoCalculator = 1;
+    let i = number;
+    while (i >= 1) {
+        foctoCalculator *= i;
+        i--;
+    }
+    console.log("factorial of 5:",foctoCalculator);
+}
+
+factorialWhile(5);
+
+
+
 
 
 
