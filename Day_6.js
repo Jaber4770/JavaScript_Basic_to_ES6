@@ -183,16 +183,16 @@ function factorialWhile(number) {
         foctoCalculator *= i;
         i--;
     }
-    console.log("factorial of 5:",foctoCalculator);
+    console.log("factorial of 5:", foctoCalculator);
 }
 
 factorialWhile(5);
 
 
-// practice problem__________________________________:
+// practice problem_______________hours to mins___________________:
 
 
-function hourConverter (hours){
+function hourConverter(hours) {
     let convetToMin = hours * 60;
     return convetToMin;
 }
@@ -201,3 +201,23 @@ function hourConverter (hours){
 let hours = 5;
 let minutes = hourConverter(hours);
 console.log(minutes);
+
+
+
+// practice problem_________find leap year_______________:
+
+function findLeapYear(years) {
+    let leapYear = [];
+    for (let i = 0; i <= years.length; i++) {
+        let year = years[i];
+        if (year % 2 === 0) {
+            leapYear.push(year);
+        }
+    }
+    return leapYear;
+}
+
+
+let yearsArray = [2023, 2024, 2028, 2030];
+let getLeapYear = findLeapYear(yearsArray);
+console.log(getLeapYear);
