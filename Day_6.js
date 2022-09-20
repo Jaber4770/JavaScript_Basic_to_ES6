@@ -189,7 +189,15 @@ function factorialWhile(number) {
 factorialWhile(5);
 
 
+// practice problem__________________________________:
 
 
+function hourConverter (hours){
+    let convetToMin = hours * 60;
+    return convetToMin;
+}
 
 
+let hours = 5;
+let minutes = hourConverter(hours);
+console.log(minutes);
