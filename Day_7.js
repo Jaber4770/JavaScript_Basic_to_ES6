@@ -20,3 +20,22 @@ let getFarenheightResult = celciusToFarenheight(celcicus);
 console.log(getFarenheightResult, "Degree Farenheit");
 
 
+// farenheit to celcius______________________________________:
+// formula is: 	(32°F − 32) × 5/9 = 0°C
+	
+
+function getCelcius(farenheit){
+    let celcius = (farenheit -32)* (5/9);
+    return celcius;
+}
+
+let farenheit = 100;
+let getCelciusResult = getCelcius(farenheit);
+console.log(getCelciusResult);
+
+
+
+
+
+
+
