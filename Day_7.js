@@ -90,6 +90,21 @@ let getInterestMoney = interest(timeInYear, principleAmount, rate);
 console.log("your interest is: ",getInterestMoney);
 
 
+// Calculating complex interest______________________________:
+
+// formula is: A = P(1 + r/n)^nt,
+
+function complexInterest (principleAmount, duration, rate, perYearTime){
+    let getAmount = principleAmount* Math.pow(duration ,(1 + rate/perYearTime));
+    return getAmount;
+}
+
+let complexPrincipleAmount = 3434343;
+let duration = 3;
+let complexRate = 5;
+let perYearTime = 3;
+let getComplexInterest = complexInterest(complexPrincipleAmount, duration, complexRate, perYearTime);
+console.log(getComplexInterest);
 
 
 
