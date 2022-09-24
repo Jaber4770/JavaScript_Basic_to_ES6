@@ -80,9 +80,69 @@ console.log("space split: ",dummyText.split(' '));
 console.log("letter split: ", dummyText.split(''));
 
 
-
-
-
-
-
 // _________________________________________Slice______Slice work with index_________:
+
+
+let loremText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati et ullam ducimus architecto saepe temporibus impedit animi facilis sapiente? Non?";
+
+
+let getPersialText = loremText.slice(0, 5);
+console.log(getPersialText);
+// slice(3,5) the first value ta soho show korte be but last index tar age porjonto show korbe. 
+
+
+/* 
+
+     from Mozila developer site string nia aro onk porte parbo.
+
+
+*/
+
+// substring________________________:
+
+let ganlyric = "tmi bndo kala pakhi";
+
+let getSubstrings = ganlyric.substring(5,10);
+console.log(getSubstrings);
+
+
+
+// _____________Join lines____________:
+
+let linesArray = [
+    'The quick brown fox jumps over the lazy dog',
+    'The quick brown fox jumps over the lazy dog',
+    'The quick brown fox jumps over the lazy dog',
+    'The quick brown fox  jumps over the lazy dog',
+    'The quick brown fox jumps over the lazy dog'
+  ];
+
+const getJoint = linesArray.join(".");
+console.log(getJoint);
+
+
+//________________________________Math.pow()__________pow = power___________:
+
+let get3ToThePower8 = Math.pow(3, 8);
+console.log(get3ToThePower8);
+
+// first value is base and the second value is the power.
+
+/* -----------------------------------------------------
+  searching on MDN math on google, i will find the docomentation and then i can read more thing about Math.
+  ----------------------------------------------------------------------------------
+*/
+
+console.log(Math.random());
+console.log(Math.random()*1000);
+
+let ceilNumber = 5.34;
+console.log("ceil: ",Math.ceil(ceilNumber));
+
+
+let floorNumber = 4.809;
+console.log("floor: ",Math.floor(floorNumber));
+
+
+let negativeVlue = -4;
+console.log("make positive: ", Math.abs(negativeVlue));
