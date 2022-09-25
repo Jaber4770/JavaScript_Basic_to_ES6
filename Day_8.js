@@ -46,7 +46,7 @@ console.log("rong index; ", lyrics.indexOf("rong"));
 // ______________________startWith___________endWith___________________:
 
 let startWith = lyrics.startsWith("sada");
-console.log("start with sada",startWith);
+console.log("start with sada", startWith);
 
 
 let endWith = lyrics.endsWith("kale.");
@@ -61,11 +61,11 @@ console.log("file is pdf: ", dataExtention.endsWith(".pdf"));
 
 
 let markSheet = "Jaber-Ahmed-MarkSheet.pdf";
-if(markSheet.endsWith("pdf") === true){
-    console.log("your file is pdf.");
+if (markSheet.endsWith("pdf") === true) {
+  console.log("your file is pdf.");
 }
-else{
-    console.log("please choose a pdf file.")
+else {
+  console.log("please choose a pdf file.")
 }
 
 
@@ -76,7 +76,7 @@ let dummyText = "the quick brown fox jumps over the lazy dog. the quick brown fo
 
 let sentenceSplit = dummyText.split('.');
 console.log(sentenceSplit);
-console.log("space split: ",dummyText.split(' '));
+console.log("space split: ", dummyText.split(' '));
 console.log("letter split: ", dummyText.split(''));
 
 
@@ -102,7 +102,7 @@ console.log(getPersialText);
 
 let ganlyric = "tmi bndo kala pakhi";
 
-let getSubstrings = ganlyric.substring(5,10);
+let getSubstrings = ganlyric.substring(5, 10);
 console.log(getSubstrings);
 
 
@@ -110,12 +110,12 @@ console.log(getSubstrings);
 // _____________Join lines____________:
 
 let linesArray = [
-    'The quick brown fox jumps over the lazy dog',
-    'The quick brown fox jumps over the lazy dog',
-    'The quick brown fox jumps over the lazy dog',
-    'The quick brown fox  jumps over the lazy dog',
-    'The quick brown fox jumps over the lazy dog'
-  ];
+  'The quick brown fox jumps over the lazy dog',
+  'The quick brown fox jumps over the lazy dog',
+  'The quick brown fox jumps over the lazy dog',
+  'The quick brown fox  jumps over the lazy dog',
+  'The quick brown fox jumps over the lazy dog'
+];
 
 const getJoint = linesArray.join(".");
 console.log(getJoint);
@@ -134,15 +134,90 @@ console.log(get3ToThePower8);
 */
 
 console.log(Math.random());
-console.log(Math.random()*1000);
+console.log(Math.random() * 1000);
 
 let ceilNumber = 5.34;
-console.log("ceil: ",Math.ceil(ceilNumber));
+console.log("ceil: ", Math.ceil(ceilNumber));
 
 
 let floorNumber = 4.809;
-console.log("floor: ",Math.floor(floorNumber));
+console.log("floor: ", Math.floor(floorNumber));
 
 
 let negativeVlue = -4;
 console.log("make positive: ", Math.abs(negativeVlue));
+
+
+let floatNumber = 8.5342;
+console.log("math round: ", Math.round(floatNumber));
+
+
+
+// _________________________________________Swap_________________________:
+
+// way-1:
+
+let first = 5;
+let second = 7;
+console.log(first, second);
+
+let tempo = first;
+first = second;
+second = tempo;
+console.log(first, second);
+
+
+// way-2:
+
+
+[first, second] = [second, first];
+console.log(first, second);
+
+
+// the functin will return the highest value______________________:
+
+
+function maxNumberGiver(values) {
+  let getLargeNumber = Math.max(...values);
+  return getLargeNumber;
+}
+
+
+let values = [23, 34, 45];
+let getLargerNumber = maxNumberGiver(values);
+console.log("The largest number in the array is: ", getLargerNumber);
+
+
+
+// the funciton will return the lowest number from an array___________________________:
+
+function lowestNumberGiver(values) {
+  let getLowestNumber = Math.min(...values)
+  return getLowestNumber;
+}
+
+let lowFuncValues = [234, 34, 45, 454, 655, 6, 45, 5, 544, 434, 45, 56, 4];
+let getLowestResult = lowestNumberGiver(lowFuncValues);
+console.log("the lowest value of the array is: ", getLowestResult);
+
+
+
+// the function will return the higest value using loop inside the function______________:
+
+function highestWithLoop(arryValue) {
+  let largestElement = arrayValue[0];
+  for(let i= 0; i<arrayValue.length; i++){
+    const index = i;
+    const getElement = arrayValue[index];
+    if(getElement > largestElement){
+      largestElement = getElement;
+    }
+  }
+  return largestElement;
+}
+
+let arrayValue = [23, 4, 4, 432, 45, 54, 54, 52, 44, 234, 45, 4];
+let getFunctionResult = highestWithLoop(arrayValue);
+console.log("the highest value from the array is: ",getFunctionResult);
+
+
