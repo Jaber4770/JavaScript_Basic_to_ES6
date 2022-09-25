@@ -205,11 +205,11 @@ console.log("the lowest value of the array is: ", getLowestResult);
 // the function will return the higest value using loop inside the function______________:
 
 function highestWithLoop(arryValue) {
-  let largestElement = arrayValue[0];
-  for(let i= 0; i<arrayValue.length; i++){
+  let largestElement = arryValue[0];
+  for (let i = 0; i < arryValue.length; i++) {
     const index = i;
-    const getElement = arrayValue[index];
-    if(getElement > largestElement){
+    const getElement = arryValue[index];
+    if (getElement > largestElement) {
       largestElement = getElement;
     }
   }
@@ -218,6 +218,24 @@ function highestWithLoop(arryValue) {
 
 let arrayValue = [23, 4, 4, 432, 45, 54, 54, 52, 44, 234, 45, 4];
 let getFunctionResult = highestWithLoop(arrayValue);
-console.log("the highest value from the array is: ",getFunctionResult);
+console.log("the highest value from the array is: ", getFunctionResult);
 
 
+// The funciton will reply the lowest value using loop indside the functin________________________:
+
+function lowestWithLoop(arrayLowest) {
+  let lowest = arrayLowest[0];
+  for(let i = 0; i<arrayLowest.length; i++){
+    let index = i;
+    let element = arrayLowest[index];
+    if(lowest > element){
+      lowest = element;
+    }
+  }
+  return lowest;
+}
+
+
+let lowestArray = [34, 342, 454, 45, 6, 7, 5, 65, 453, 43, 4];
+let getLowest = lowestWithLoop(lowestArray);
+console.log("Your lowest number is: ",getLowest);
