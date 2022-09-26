@@ -225,10 +225,10 @@ console.log("the highest value from the array is: ", getFunctionResult);
 
 function lowestWithLoop(arrayLowest) {
   let lowest = arrayLowest[0];
-  for(let i = 0; i<arrayLowest.length; i++){
+  for (let i = 0; i < arrayLowest.length; i++) {
     let index = i;
     let element = arrayLowest[index];
-    if(lowest > element){
+    if (lowest > element) {
       lowest = element;
     }
   }
@@ -238,4 +238,68 @@ function lowestWithLoop(arrayLowest) {
 
 let lowestArray = [34, 342, 454, 45, 6, 7, 5, 65, 453, 43, 4];
 let getLowest = lowestWithLoop(lowestArray);
-console.log("Your lowest number is: ",getLowest);
+console.log("Your lowest number is: ", getLowest);
+
+
+
+// geting the text in reverse way___________________________________________________________:
+
+function getText(myText) {
+  // the serial way
+  let rightWay = '';
+  for(let i = 0; i < myText.length; i++){
+    rightWay += myText[i];
+    console.log(myText[i], rightWay);
+  } 
+ 
+
+  // The reverse way is:
+  let reverse = '';
+  for (let i = myText.length - 1; i >= 0; i--) {
+    let text = myText[i];
+    reverse += text;
+    console.log(text, reverse);
+  }
+  return reverse;
+}
+
+
+let text = "i am a good boy";
+let getTextResult = getText(text);
+console.log(getTextResult);
+
+
+console.log("// way to break line in white space_________________________________________________________:");
+// way to break line in white space_________________________________________________________:
+
+function wordBreak(word){
+// serial way te word slit kora hosise.
+  let element = word.split(' ');
+  console.log(element);
+
+  // reverse kora hoise split kora array ta k and new ekta array banano hoise.
+  let getWords = [];
+  for(let i = element.length - 1; i>= 0; i--){
+    getWords.push(element[i]);
+  }
+
+  // ekhn word gola k join kora hose.
+  let getJointLine = getWords.join(' ');
+  console.log(getJointLine);
+
+  return getWords;
+}
+
+let words = 'I am a good boy';
+let getWordResult = wordBreak(words);
+console.log(getWordResult);
+
+
+
+// fibonachhi series____________________________________________________:
+
+let fibo = [0, 1];
+for(let i = 2; i< 20; i++){
+  fibo[i] = fibo[i-1] + fibo[i-2];
+}
+console.log(fibo);
