@@ -55,3 +55,66 @@ console.log("full array: ", spliceArray);
 let getSplice = spliceArray.splice(2, 5);
 console.log('spliced array: ', getSplice);
 console.log("after spliced the array: ", spliceArray);
+
+
+
+// _____________________finding or removing duplicate element from an array_______________________:
+
+let entryName = ["babul", "ebul", "cabul", "babul", "gabul", "mabul", "abul", "babul", "gabul"];
+function removeDuplcates(names){
+    let uniqueNames = [];
+    for(let i = 0; i<names.length; i++){
+        let name = names[i];
+        if(uniqueNames.includes(name) === false){
+            uniqueNames.push(name);
+        }
+    }
+    return uniqueNames;
+}
+
+let getFreshArray = removeDuplcates(entryName);
+console.log(getFreshArray);
+
+
+
+// showing foo, bar, foobar problem________________________________________________:
+
+for(let i = 1; i<= 50; i++){
+    if(i % 3 === 0 && i % 5 === 0){
+        console.log("foobar");
+    }
+    else if(i % 5 === 0){
+        console.log("bar");
+    }
+    else if(i % 3 === 0){
+        console.log("foo");
+    }
+    else{
+        console.log(i);
+    }
+}
+
+
+// __________________________Calculating Wood______________________________:
+
+function woodCalculator(chairQuantity, tableQuantity, bedQuantity){
+    const chairWoodNeed = 3;
+    const tableWoodNeed = 10;
+    const bedWoodNeed = 50;
+
+    let totalChairWood = chairWoodNeed * chairQuantity;
+    let totalTableWood = tableWoodNeed * tableQuantity;
+    let totalBedWood = bedWoodNeed * bedQuantity;
+
+    let totalWoodNeed = totalChairWood + totalTableWood + totalBedWood;
+
+    return totalWoodNeed;
+}
+
+
+let chairQuantity = 3;
+let tableQuantity = 4;
+let bedQuantity = 5;
+
+let getTotalWood = woodCalculator(chairQuantity, tableQuantity, bedQuantity);
+console.log("total wood need: ", getTotalWood);
