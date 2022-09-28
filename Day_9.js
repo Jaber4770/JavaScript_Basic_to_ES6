@@ -182,7 +182,7 @@ function findChepestPhone(phones) {
     let chepestPhone = phones[0];
     for (let i = 0; i < phones.length; i++) {
         const getPhone = phones[i];
-        if(getPhone.price < chepestPhone.price){
+        if (getPhone.price < chepestPhone.price) {
             chepestPhone = getPhone;
         }
     }
@@ -191,3 +191,65 @@ function findChepestPhone(phones) {
 
 let getChespestPhone = findChepestPhone(phones);
 console.log(getChespestPhone);
+
+
+// ______________________Shoping_Cart_price_calculation___________________:
+
+let shoppingCart = [
+    { name: "shirt", price: 1500, quantity: 4 },
+    { name: "pant", price: 1200, quantity: 5 },
+    { name: "t-shirt", price: 500, quantity: 2 },
+    { name: "jaignga", price: 300, quantity: 3 },
+    { name: "belt", price: 600, quantity: 7 },
+    { name: "short-pant", price: 400, quantity: 8 },
+    { name: "cap", price: 500, quantity: 8 },
+    { name: "sinto-genji", price: 100, quantity: 3 },
+    { name: "shoe", price: 1500, quantity: 4 },
+];
+
+function priceCalulating(shoppingCart) {
+    let sum = 0;
+    for (let i = 0; i < shoppingCart.length; i++) {
+        let getElement = shoppingCart[i];
+        let totalPrice = getElement.price * getElement.quantity;
+        sum += totalPrice;
+    }
+    return sum;
+}
+
+
+let getSum = priceCalulating(shoppingCart);
+console.log("total: ", getSum);
+
+
+
+// _______________________________Ticket_Price_Calulation__________________________:
+
+function ticketPrice(ticketQuantity) {
+    let first100ticketPrice = 100;
+    let second100ticketPrice = 90;
+    let restTicketPrice = 70;
+    if (ticketQuantity <= 100) {
+        let totalPrice = ticketQuantity * first100ticketPrice;
+        return totalPrice;
+    }
+    else if (ticketQuantity <= 200) {
+        let first100price = 100 * first100ticketPrice;
+        let restTicket = ticketQuantity - 100;
+        let second100price = restTicket * second100ticketPrice;
+        let totalPrice = first100price + second100price;
+        return totalPrice;
+    }
+    else {
+        let first100price = 100 * first100ticketPrice;
+        let second100price = 100 * second100ticketPrice;
+        let restTicket = ticketQuantity - 200;
+        let lastTicketPrice = restTicket * restTicketPrice;
+        let totalPrice = first100price + second100price + lastTicketPrice;
+        return totalPrice;
+    }
+}
+
+let ticketQuantity = 250;
+let getTotalPrice = ticketPrice(ticketQuantity);
+console.log(getTotalPrice, "tk");
