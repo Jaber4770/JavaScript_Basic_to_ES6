@@ -129,7 +129,7 @@ console.log(get3ToThePower8);
 // first value is base and the second value is the power.
 
 /* -----------------------------------------------------
-  searching on MDN math on google, i will find the docomentation and then i can read more thing about Math.
+  searching on MDN math on google, i will find the documentation and then i can read more thing about Math.
   ----------------------------------------------------------------------------------
 */
 
@@ -247,11 +247,11 @@ console.log("Your lowest number is: ", getLowest);
 function getText(myText) {
   // the serial way
   let rightWay = '';
-  for(let i = 0; i < myText.length; i++){
+  for (let i = 0; i < myText.length; i++) {
     rightWay += myText[i];
     console.log(myText[i], rightWay);
-  } 
- 
+  }
+
 
   // The reverse way is:
   let reverse = '';
@@ -272,14 +272,14 @@ console.log(getTextResult);
 console.log("// way to break line in white space_________________________________________________________:");
 // way to break line in white space_________________________________________________________:
 
-function wordBreak(word){
-// serial way te word slit kora hosise.
+function wordBreak(word) {
+  // serial way te word slit kora hosise.
   let element = word.split(' ');
   console.log(element);
 
   // reverse kora hoise split kora array ta k and new ekta array banano hoise.
   let getWords = [];
-  for(let i = element.length - 1; i>= 0; i--){
+  for (let i = element.length - 1; i >= 0; i--) {
     getWords.push(element[i]);
   }
 
@@ -299,7 +299,15 @@ console.log(getWordResult);
 // fibonachhi series____________________________________________________:
 
 let fibo = [0, 1];
-for(let i = 2; i< 20; i++){
-  fibo[i] = fibo[i-1] + fibo[i-2];
+for (let i = 2; i < 20; i++) {
+  fibo[i] = fibo[i - 1] + fibo[i - 2];
 }
-console.log(fibo);
+console.log("fibo 0: ",fibo);
+
+
+// fibo nacchi practice:
+let fibo1 = [0, 1];
+for (let i = 2; i < 20; i++) {
+  fibo1[i] = fibo1[i - 1] + fibo1[i - 2];
+}
+console.log("fibo 1: ",fibo1)
