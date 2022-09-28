@@ -253,3 +253,5 @@ function ticketPrice(ticketQuantity) {
 let ticketQuantity = 250;
 let getTotalPrice = ticketPrice(ticketQuantity);
 console.log(getTotalPrice, "tk");
+
+
