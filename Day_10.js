@@ -133,7 +133,7 @@ console.log(arr);
 
 let arry = [254, 345, 455, 546, 45, 75, 85, 545, 57, 6, 5, 5, 454, 5, 43, 324, 324, 234, 3, 4, 234, 23, 5, 46, 546];
 
-for(let i = 0; i<arry.length; i++){
+for (let i = 0; i < arry.length; i++) {
     console.log(arry[i]);
 }
 
@@ -148,9 +148,9 @@ for(let i = 0; i<arry.length; i++){
 
 let numbers = [254, 345, 455, 546, 45, 75, 85, 545, 57, 6, 5, 5, 454, 5, 43, 324, 324, 234, 3, 4, 234, 23, 5, 46, 546];
 
-for(let i = 0; i<numbers.length; i++){
-    if(numbers[i] > 80){
-        console.log("bigger than 80: ",numbers[i]);
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 80) {
+        console.log("bigger than 80: ", numbers[i]);
     }
 }
 
@@ -162,12 +162,12 @@ for(let i = 0; i<numbers.length; i++){
 */
 
 
-function multiplicationNum(num1, num2, num3){
+function multiplicationNum(num1, num2, num3) {
     let total = num1 * num2 * num3;
     return total;
 }
 
-let getMultiplication = multiplicationNum(2,3,4);
+let getMultiplication = multiplicationNum(2, 3, 4);
 console.log(getMultiplication);
 
 
@@ -177,3 +177,131 @@ console.log(getMultiplication);
 ১২. একটা অবজেক্ট ডিক্লেয়ার করবে। সেটাতে তিনটা প্রপার্টি থাকবে। এবং কোন একটা প্রোপার্টি এর মান চেইঞ্জ করবা। 
 
 */
+
+
+let object = {
+    name: "rog",
+    price: 20000,
+    color: "black"
+}
+
+object.name = "samsung";
+console.log(object);
+
+
+
+/* 
+
+প্রব্লেম সলভিং চেকলিস্ট/সেলফ এসেসমেন্ট : 
+
+৩. আরেকটা ফাংশন লিখবে যেটার নাম লিখবে। যেই ফাংশনের নাম হবে paperRequirements এই ফাংশনের প্যারামিটার হিসেবে তিনটা প্যারামিটার হবে। প্রথম প্যারামিটার হবে তুমি প্রথম বই কত কপি ছাপাতে চাও। সেকেন্ড প্যারামিটার হবে তুমি সেকেন্ড বই কত কপি ছাপাতে চাও। আর থার্ড প্যারামিটার হবে তুমি থার্ড বই কত কপি ছাপাতে চাও। অর্থাৎ কোন বই এর কত কপি ছাপানো হবে সেটাই প্যারামিটার হিসেবে নিবে। 
+
+এইবার ভালো করে খেয়াল করো। 
+প্রথম বই ছাপানোর জন্য পৃষ্ঠা লাগবে ১০০ টা 
+সেকেন্ড বই ছাপানোর জন্য পৃষ্ঠা লাগবে ২০০ টা 
+তৃতীয় বই ছাপানোর জন্য পৃষ্ঠা লাগবে ৩০০ টা 
+
+এখন তোমার কাজ হচ্ছে paperRequirements নামক ফাংশন লিখে ফেলা যাতে। সেই ফাংশনকে কল করে কোন বই এর কত কপি 
+লাগবে বলে দিবে প্যারামিটার হিসেবে। আর ফাংশন হিসাব করে বলে দিবে তোমার সর্বমোট কতপৃষ্ঠা কাগজ লাগবে। 
+উত্তর হিসেবে সংখ্যা রিটার্ন করবে। 
+
+*/
+
+function paperRequirements(firstBookCopy, secondBookCopy, thirdBookCopy) {
+    const firstBookPage = 100;
+    const secondBookPage = 200;
+    const thirdBookPage = 300;
+
+    let totalPageFirstBook = firstBookCopy * firstBookPage;
+    let totalPageSecondBook = secondBookCopy * secondBookPage;
+    let totalPageThirdBook = thirdBookPage * thirdBookCopy;
+
+    let totalPage = totalPageFirstBook + totalPageSecondBook + totalPageThirdBook;
+
+    return totalPage;
+}
+
+
+let firstBookCopy = 50;
+let secondBookCopy = 30;
+let thirdBookCopy = 20;
+let getTotalPageResult = paperRequirements(firstBookCopy, secondBookCopy, thirdBookCopy);
+console.log(getTotalPageResult);
+
+
+
+
+
+
+/* ১. সিম্পল একটা ফাংশন লিখতে হবে। যেটার নাম হবে feetToInch এবং এই ফাংশন ইনপুট হিসেবে নিবে feet আর রিটার্ন করবে inch । অর্থাৎ এই ফাংশনকে কোন একটা ফিট বলে দিলে সে রিটার্ন হিসেবে বলে দিবে কত ইঞ্চি হয়।  */
+
+
+function feetToInch(feet) {
+    let inch = feet / 12;
+    return inch;
+}
+
+let getInch = feetToInch(234);
+console.log("your converted result is: ", getInch);
+
+
+
+
+/* 
+৫. এইটা একটু ট্রিকি হতে পারে। একটা array এর মধ্যে অনেকগুলা সংখ্যা থাকবে। তোমার কাজ হচ্ছে সংখ্যা গুলা একটার পর একটা করে চেক করা। এবং সংখ্যা গুলা যদি পজিটিভ সংখ্যা হয়। অর্থাৎ শূন্য বা শূন্যের চাইতে বড় হয় তাহলে সেগুলাকে কোন একটা array এর মধ্যে রাখবে। আর যদি নেগেটিভ সংখ্যা হয়। তাহলে লুপটা স্টপ করে দিবে। এবং লুপ বন্ধ করার আগ পর্যন্ত যতগুলা পজিটিভ সংখ্যা পাওয়া গেছে। সেগুলা রিটার্ন করে দিবে। 
+*/
+
+
+let arrayNumbers = [254, 345, 455, 546, 45, 75, 85, 545, -57, 6, 5, 5, 454, -5, 43, -324, 324, -234, -3, 4, 234, 23, -5, 46, -546];
+
+function positiveNumber(arrayNumbers) {
+    let newArray = [];
+    for (let i = 0; i < arrayNumbers.length; i++) {
+        if (arrayNumbers[i] >= 0) {
+            newArray.push(arrayNumbers[i]);
+        }
+        else if (arrayNumbers[i] < 0) {
+            break;
+        }
+    }
+    return newArray;
+
+}
+
+
+let getPositiveNumber = positiveNumber(arrayNumbers);
+console.log("positive numbers are: ", getPositiveNumber);
+
+
+
+
+/* ৪. একটা ফাংশন লিখবে। এই ফাংশনের নাম হবে bestFriend তারপর সেই ফাংশনে ইনপুট প্যারামিটার হিসেবে একটা array নিবে। সেই array এর মধ্যে তোমার সব ফ্রেন্ডের নাম থাকবে। এখন তোমার কাজ হচ্ছে যে ফ্রেন্ড এর নাম সবচেয়ে বড় সেই ফ্রেন্ড এর নাম রিটার্ন করে দেয়া। এই ক্ষেত্রে তুমি নামটা অর্থাৎ ফ্রেন্ডের নাম (স্ট্রিং) রিটার্ন করতে হবে।  */
+
+function bestFriend(namesArray) {
+    let largeName = "";
+    for (let i = 0; i < namesArray.length; i++) {
+        let name = namesArray[i];
+        if (name.length > largeName.length ) {
+            largeName = name;
+        }
+    }
+    return largeName;
+    ;
+}
+
+let friendsNames = ['rifat', 'shawon', 'mithu'];
+let getLargeName = bestFriend(friendsNames);
+console.log("large name: ", getLargeName);
+
+
+
+/* ২. একদম ফাংশন এর নাম হুবহু centimeterToMeter নাম দিয়ে একটা ফাংশন লিখবে। এই ফাংশনে ইনপুট হিসাবে কেউ সেন্টিমিটার দিবে আর সেই সেন্টিমিটার কে মিটার এ কনভার্ট করে রেজাল্ট রিটার্ন করবে।  */
+
+
+function centimeterToMeter(centimeter) {
+    let meter = centimeter / 100;
+    return meter;
+}
+
+let getMeter = centimeterToMeter(344);
+console.log(getMeter);
