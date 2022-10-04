@@ -11,7 +11,7 @@ function radianToDegree(radian) {
         let twoDeciamlConverted = parseFloat(degree.toFixed(2));
         return twoDeciamlConverted;
     }
-    else{
+    else {
         return "Please input a number!"
     }
 }
@@ -24,7 +24,6 @@ console.log(getDegreeResult);
 
 
 
-
 /* 
 Problem:2  isJavaScriptFile 
 
@@ -32,28 +31,22 @@ Problem:2  isJavaScriptFile
 
  */
 
+function isJavaScriptFile(fileExtention) {
+    if (typeof fileExtention === "string") {
+        if (fileExtention.endsWith('.js')) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    else {
+        return "Please input a string."
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let isJavaScript = isJavaScriptFile("app.js");
+console.log(isJavaScript);
 
 
 
@@ -61,103 +54,67 @@ Problem:2  isJavaScriptFile
 
 /* 
 Problem 3: oilPrice
-ফাংশন নেম দিতে হবে oilPrice। এই ফাংশন তিনটা প্যারামিটার নিবে। 
+ফাংশন নেম দিতে হবে oilPrice এই ফাংশন তিনটা প্যারামিটার নিবে। 
 ভিডিও ভালো করে দেখবে। 
-
 
 প্রতি লিটার ডিজেলের এর দাম – 114 টাকা
 প্রতি লিটার পেট্রোল এর দাম – 130 টাকা 
 প্রতি লিটার অকটেনের এর দাম – 135 টাকা 
 
-
-
 এখন সে যদি বিভিন্ন লিটারের ডিজেল,পেট্রোল,অকটেনের অর্ডার দেয় তাহলে টোটাল কত টাকা খরচ হবে হলো সেই সংখ্যা রিটার্ন করতে হবে। 
 
-.
+*/
 
-Sample Data
-Input
-Output
+function oilPrice(dieselLitre, petrolLitre, octaneLitre) {
+    if (((typeof dieselLitre === "number") && (typeof petrolLitre === "number")) && (typeof octaneLitre === "number")) {
+        const dieselPricePerLitre = 114;
+        const petrolPricePerLitre = 130;
+        const octanePricePerLitre = 135;
 
-1, 1, 1
-30, 20, 10
-1,0,2
-0,2,3
-379
-7370
-384
-665
+        let dieselTotalPrice = dieselPricePerLitre * dieselLitre;
+        let petrolTotalPrice = petrolPricePerLitre * petrolLitre;
+        let octaneTotalPrice = octanePricePerLitre * octaneLitre;
 
- */
+        let totalOilPrice = dieselTotalPrice + petrolTotalPrice + octaneTotalPrice;
 
+        return totalOilPrice;
+    }
+    else {
+        return "Please input number!";
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let getTotalPrice = oilPrice(1, 5, 3);
+console.log(getTotalPrice);
 
 
 
 /*  
-
 Problem 4: publicBusFare
 
 একটি বড় সংখ্যাক মানুষজন পিকনিকে যাবে। বাসের সংখ্যা মানুষের সংখার উপর নির্ভর করবে। ধরো আমাদের বাস ও মাইক্রো আছে ।প্রতিটি বাসের ক্যাপাসিটি ৫০ জন এবং প্রতিটি মাইক্রবাসের ক্যাপাসিটি ১১ জন এবং পাবলিক বাসের প্রতিটি টিকেটের মূল্য ২৫০ টাকা করে। এখন তোমাকে একটি ফাংশন লিখতে হবে যার নাম হবে publicBusFare যেটি প্যরামিটার হিসেবে একটা সংখ্যা (কতজন যাবে )  নিবে । মোট কতটাকা পাবলিক বাস ফেয়ারে যাবে সেটি তোমাকে রিটার্ন করবে । 
-
-
-
-উদাহরণ১ঃ
-
- যদি ১১৭ জন মানুষ পিকনিকে যায় তাহলে আমাদের বাস লাগবে ২ টি ও মাইক্রোবাস লাগবে ১ টি । বাকি মানুষ পাবলিক বাসে যাবে। এই কয়জন মানুষগুলোর জন্য পাবলিক বাসের ভাড়া মোট কত হবে সেটি রিটার্ন করতে হবে।
-
-
-
-উদাহরণ২ঃ
-
- যদি ২৩৫ জন মানুষ পিকনিকে যায় তাহলে আমাদের বাস লাগবে ৪ টি ও মাইক্রোবাস লাগবে ৩ টি এবং বাকি মানুষ পাবলিক বাসে যাবে। এই কয়জন মানুষগুলোর জন্য পাবলিক বাসের ভাড়া মোট কত হবে সেটি রিটার্ন করতে হবে।
-
-
-
-Sample Data
-
-Input
-Output
-
-50
-55
-112
-235
-365
-0
-1250
-250
-500
-1000
-
  */
 
 
+function publicBusFare(totalPassenger) {
+    const busPassenger = 50;
+    const microBusPassenger = 11;
+    const publicBusTicketPrice = 250;
+
+    if(typeof totalPassenger === "number"){
+        let passengerOnBus = totalPassenger % busPassenger;
+        let remainingForPublicBus = passengerOnBus % microBusPassenger;
+        let totalPublicBusFare = remainingForPublicBus * publicBusTicketPrice;
+        return totalPublicBusFare;
+    }
+    else{
+        return "Plese input a Number";
+    }
+}
 
 
+let getPublicBusFare = publicBusFare(62);
+console.log("Total Bus Fare: ", getPublicBusFare);
 
 
 
@@ -180,30 +137,35 @@ Problem 5: isBestFriend
 
 তোমাকে একটি ফাংশন লিখতে হবে isBestFriend যেটি প্যরামিটার হিসেবে দুইটি অবজেক্ট নিবে । তোমাকে অবজেক্ট দুইটি নিয়ে দেখতে হবে এরা দুইজন একে অপরের বেস্টফ্রেন্ড কিনা । যদি বেস্ট ফ্রেন্ড হয় তাহলে true রিটার্ন করবে , না হলে false রিটার্ন করবে ।
 
-Sample Data:
-
-Input
-Output
-
 { name: "abul", friend: "babul" },
 { name: "babul", friend: "abul" }
 
-
 { name: "abul", friend: "kabul" },
-{ name: "kabul", friend: "sabul" }
-
-
-{ name: "doe", friend: "alex" },
-{ name: "john", friend: "doe" }
-
-
-
-true
-
-false
-
-false
-
-
+{ name: "kabul", friend: "sabul" 
 
  */
+
+function isBestFriend(friendName1, friendName2) {
+    // from first object/perameter
+    let name1 = friendName1.name;
+    let friend1 = friendName1.friend;
+
+    // from second object/perameter
+    let name2 = friendName2.name;
+    let friend2 = friendName2.friend;
+
+    if (((typeof name1 === "string") && (typeof friend1 === "string")) && ((typeof name2 === "string") && (typeof friend2 === "string"))) {
+        if ((name1 === friend2) && (friend1 === name2)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    else {
+        return "Please input string."
+    }
+}
+
+let getfriend = isBestFriend({ name: "abul", friend: "babul" }, { name: "babul", friend: "abul" })
+console.log("your friend is best friend: ", getfriend);
