@@ -18,7 +18,55 @@
             <li>Shafayet</li>
             <li>bonobash</li>
         </ul>
+        <h1>favourite place to visit.</h1>
+        <ul id="places">
+            <li class="visited-place">sondorban</li>
+            <li class="visited-place">bandarban</li>
+            <li class="visited-place">katabon</li>
+            <li class="visited-place">shalbon</li>
+        </ul>
+        <h1 id="fruits">favourite fruits</h1>
+        <ul>
+            <li>Jalaliset</li>
+            <li>Shafayet</li>
+            <li>bonobash</li>
+        </ul>
+        <h1>singer</h1>
+        <ul class="singer">
+            <li>Jalaliset</li>
+            <li>Shafayet</li>
+            <li>bonobash</li>
+        </ul>
     </main>
     <script src="dom.js"></script>
+    <script>
+        let liCollection = document.getElementsByTagName("li");
+        // console.log(liCollection);
+        for(li of liCollection){
+            // console.log(li.innerText);
+        }
+
+        let fruits = document.getElementById("fruits");
+        // console.log(fruits);
+
+        let places = document.getElementsByClassName('visited-place');
+        // console.log(places);
+        for(place of places){
+            console.log(place.innerText);
+        }
+
+
+        let sameli = document.querySelectorAll('.singer li');
+        console.log(sameli);
+        for(li of sameli){
+            console.log(li);
+        }
+        let somePlaces = document.querySelectorAll("#places li");
+        for(place of somePlaces){
+            console.log(place.innerText);
+        }
+        let visited_place = document.querySelector('#places li');
+        console.log(visited_place);
+    </script>
 </body>
 </html>
